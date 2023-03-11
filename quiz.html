@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FunTime-Quiz is a website  for learning and having fun Germany Eurpe">
+    <meta name="keywords" content="Educative, having fun, nature, science, not easy, for school,  Germany, Europe">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google font   used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>The Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="primary-header">
+            <div class="container-header">
+                <div class="nav-wrapper">
+                    <!--Here is the markup for navbar and there are arial-label for ther screenreader-->
+                    <nav>
+                        <ul id="primary-nav">
+                            <li><a class="active" href="index.html" style="font-size: 2rem;"
+                                    aria-label="Go to the Top for  the home page page">Home</a></li>
+                            <li><a href="contact.html" style="font-size: 2rem;"
+                                    aria-label="Go to the Top of the contact page">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--Here the the main container for the quiz-->
+                <div class="container-quiz1">
+                    <div class="question-option">
+                        <h3>Question <span class="question-num-value"></span> of
+                            <span class="total-questions"></span>
+                        </h3>
+                    </div>
+                    <!--Here is the markup for the question this wil be populated in Javascript -->
+
+                    <div class="question">
+                        What do you know about Nature and Science?
+                    </div>
+                    <!--Here is the markup for the options(there are four options to chose from) answers for the  quiz: what 
+                        this does is that onclick  event that will be triggered when the user select option-, credited to youtube tutorial
+                        (https://youtu.be/2Bpiluefkh8)-->
+                    <div class="options">
+                        <div id="0" class="option1" onclick="check(this)"></div>
+                        <div id="1" class="option2" onclick="check(this)"></div>
+                        <div id="2" class="option3" onclick="check(this)"></div>
+                        <div id="3" class="option4" onclick="check(this)"></div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="next()" class="btn1">Next</button>
+                    </div>
+                </div>
+                <!--the markup for the result tracker for tracking and the result-. the function is created in Javascript-->
+                <div class="answers-tracker">
+
+                </div>
+
+                <!--this is for the container that hold the users score and images for high score and low score-->
+                <div class="quiz-over">
+                    <div class="box">
+                        <h1 id="message">great or Poor result</h1> <br>
+                        <!--there is no images here, but in Javascript page-->
+                        <img src="/images" alt="good and poor images" class="images" />
+                        <br>
+                        <h1>
+                            You got <span class="correct-answers"></span> out of
+                            <span class="total-questions2"></span> answers correct.
+                            That is <span class="percentage"></span>
+                        </h1>
+                        <!--This on click event to replay the quiz- The function can be seen  Javascript page-->
+                        <button type="button" onclick="tryAgain()" class="btn1">Play Again! </button><br>
+                        <!--This on click event to jump to the home Page the quiz- The function can be seen  Javascript page-->
+                        <button type="button" onclick="goHome()" class="btn1" aria-label=" click
+                        k the button to  the home page">Go Home! </button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
