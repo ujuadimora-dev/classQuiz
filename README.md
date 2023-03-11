@@ -1,108 +1,390 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# FunTime-Quiz
 
-Welcome Adimora Uju Louisa,
+ Funtime- Quiz site is  an educational website- The user is test on on his/her knowledge on science and Nature. The site is user friendly and accesseble for screen reader.  It  has  5 sections; Home , contact, play, Quiz, score sections.
+. View the live site here
+ [here]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Mockup](assets/doc/readme-images/mockup-site.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+### Site wide
+*	Navigation Menu
+*	Contains links to the Home, and Contact  pages and will be responsive at 320px, 600px, , 50em. 1024px
+*	This will allow users to easily navigate between the pages within the site on these sizes devices.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+![Nav Menu](assets/doc/readme-images/nav-quiz.PNG)
 
-A blue button should appear to click: _Make Public_,
+*	Footer
+*	This  contain icons as links to social media websites that will open in new tabs. Icons will be accessible to the visually impaired who may be using a screen reader, by the use of aria labels. 
+*	The social media link will allow the user to follow the 'FunTime-Quiz site' on various social media where they can get more up to date information that may not be displayed on the website. The contact information will allow the user to contact 'FunTime-Quiz' directly
+*	
 
-Another blue button should appear to click: _Open Browser_.
+![Footer](assets/doc/readme-images/footer-area.PNG)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## Landing Page
+* Landing page image
+* This will help to immediately  fillin his/her name.
 
-Another blue button should appear to click: _Open Browser_.
+![Landing Page Image](assets/doc/readme-images/home-page1.PNG)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+*	The user needs to fill simple form. Only the name'( Note: the user MUST fill in the name to be allowed to submit)
+*	Then the user will click submit button
+*	There is FunTime-quiz logo design by me. I used micerosoft office to  website design it.	
+*	The Home page is highlighted with a green color to show the page's active 
 
-To log into the Heroku toolbelt CLI:
+## Play page
+* Below is the image of the play page.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Play section](assets/doc/readme-images/play-quiz.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* This section instruct the user what type of quiz(in this  case general knowledge on Nature and science)
+ is going to take so as to prepare his mind to be ready.
+ 1. Its tell the user that is not going be to be easy.
+2. It also tell the user that is going to be FUN  and Educational.
 
-------
+## Contact page
+ContactPage
+This page shows the contact form
 
-## Release History
+*	Contact form
+*	This contact form is implemented to allow users to contact 'FunTime-Quiz' 
+*	Username (is a must;  if the user did not put in his/her name, the system will complain that the name must be writing)
+*	Email (a must ;if the user did not put in his/her email and must contain(@), the system will complain that the email with (@) must be writing))
+* On successful submission of the contact form, the user will be navigated to Thank.html displaying Thank you message.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Contact us page](assets/doc/readme-images/contac-form.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Thank you page
+*  This page shows the whrn the user successful subit the contact form.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Thank You message](assets/doc/readme-images/thank-u.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Quiz section
+### Quiz  section Page( the credit goes to this site https://youtu.be/2Bpiluefkh8 , it is a You Tube  tutorial video)
+* This page has ten(10) questions and four (4)options to select from each time a question is being asked
+The  consists of ;
+1.Score borad for the Great Score
+2. Score board for a poor score or result
+3. The user must select option before going to another question
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Quiz section](assets/doc/readme-images/quiz-sec.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Great Result or score is when the user score above 5( that is >6). As shown in the image below
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Great score](assets/doc/readme-images/great-work.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Poor The result or score is when the user score between 0 and 6. As shown below
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Poor score](assets/doc/readme-images/poor-mark.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## The following steps below shows how the App works
+![step 1 and 2](assets/doc/readme-images/sect1.jpg)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Step 3 and 4](assets/doc/readme-images/sect2.jpg)
 
-------
+![step 5](assets/doc/readme-images/sect3.jpg)
 
-## FAQ about the uptime script
+![step 6](assets/doc/readme-images/sec6.jpg)
 
-**Why have you added this script?**
+![ccontinues](assets/doc/readme-images/sect5.jpg)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![continues..](assets/doc/readme-images/sect6.jpg)
 
-**How will this affect me?**
+![continues..](assets/doc/readme-images/sect7.jpg)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![continues..](assets/doc/readme-images/sect8.jpg)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+## Existent Features
+*	Responsive design
+*	There are some animations on the site
+*	Contact form and thank you message
+*	The the user must enter username be playing the game
+*	There are buttons to to replay the Quiz and navigate you to the Home page
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+### Features Left to Implement
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* 	As a future enhancement, the contact form will be updated with to send an email to “FunTime-Quiz 's email” and give the user notification information.
+*	There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'FunTime-Quiz'
+*	There should Google map showing the location of FunTime-Quiz company
+*   Timer  for the quiz will be implemented in the future
+*	It should also in Future be a firm that is decated for Eductional quizzes for schools( both Primary and tericially institutions)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Design
 
-**Anything more?**
+## Home Page
+![Home page](assets/doc/readme-images/home-design.PNG)
+<br><br>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Instruction Page
+![insruction section](assets/doc/readme-images/inst-dessign.PNG)
+<br><br>
 
----
+## contact Page
+![contact page](assets/doc/readme-images/contdesin.PNG)
+<br><br>
 
-Happy coding!
+## contact Page
+![Quiz Section](assets/doc/readme-images/quiz-desgn.PNG)
+<br><br>
+
+
+## Technologies
+
+* HTML
+    * The structure of the Website was developed using HTML as the main language.
+* CSS
+    * The Website was styled using custom CSS in an external file.
+* Javascripts
+    * The Website was interative using custom Javascript in an external file.
+* Visual Studio Code
+    * The website was developed using Visual Studio Code IDE
+* GitHub
+    * Source code is hosted on GitHub and delpoyed using Git Pages.
+* Git 
+    * Used to commit and push code during the development opf the Website
+* Font Awesome
+    * Icons obtained from https://fontawesome.com/ were used as the Social media links in the footer section. 
+* Tinyjpg
+    * https://tinyjpg.com/ was used to reduce the size of the images used throughout the website
+
+
+## Testing 
+
+### Responsiveness
+
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards as defined in [WCAG 2.1 Reflow criteria for responsive design](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html) on Chrome, Edge, Firefox and Opera browsers.
+
+Steps to test:
+
+1. Open browser and navigate to [FunTime-Quiz]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and decrease width to 320px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
+
+Expected:
+
+Website is responsive on all screen sizes and no images are pixelated or stretched.
+No horizontal scroll is present.
+No elements overlap.
+
+Actual:
+
+Website behaved as expected with the exception of switching to landscape . 
+
+Website was also opened on the following devices and no responsive issues were seen:
+
+- Oukitel C21 Pro
+- TCL 30 Pro
+- iPhone SE
+- Samsung Galaxy Tablet
+
+### Accessibility
+
+[Wave Accessibility](https://wave.webaim.org/) tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing.
+
+Testing was focused to ensure the following criteria were met:
+
+- All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs
+- Color contrasts meet a minimum ratio as specified in [WCAG 2.1 Contrast Guidelines](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
+- Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user
+- All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions
+- All not textual content had alternative text or titles so descriptions are read out to screen readers
+- HTML page lang attribute has been set
+- Aria properties have been implemented correctly
+- WCAG 2.1 Coding best practices being followed
+
+Manual tests were also performed to ensure the website was accessible as possible and an accessibility issue was identified.
+
+Issue : After keyboard controls were implemented, while testing the site with windows 'Narrator' screenreader, it was not clearly known what the purpose of the labels/checkboxes were. An aria-label label was added to the labels for screen readers to alert them that the labels were clickable and what their purpose was. Note:  I was only able to perform thise text of th e time factor.
+
+### Lighthouse Testing
+
+### Home Page
+![Home](assets/doc/test-images/home-lighttest.PNG)
+
+### Quiz Section
+
+![Quiz](assets/doc/test-images/quiz-leistung.PNG)
+
+### Contact Page
+
+![contact us](assets/doc/test-images/contact-leghthous.PNG)
+
+### Functional Testing
+
+**Navigation Links**
+
+Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
+
+| Navigation Link | Page to Load    |
+| --------------- | --------------- |
+| Home            | index.html      |
+| Contact Us      | contact.html    |
+
+Links on all pages navigated to the correct pages as exptected.
+
+**Form Testing**
+
+The form on the  Home page was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
+
+_Scenario One - Correct Inputs_
+
+Steps to test:
+
+1. Navigate to [FunTime-Quiz - Home Page]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
+2. click the Contact us page  and fill in the  to the form and input the following data:
+    Name: Uju
+3. Click Submit
+4. User should be redirected to Play.html as expected
+
+Expected:
+
+Form submits with no warnings or errors and the user is redirected to a play.html  page.
+
+_Scenario two -  Inputs(nothing)
+1. Navigate to [Home - FunTime-Quiz]( https://ujuadimora-dev.github.io/FunTime-Quiz/)
+2. Scroll down to the form and input the following data:
+   - First Name: blanK  
+3. Click Submit
+Expected:
+
+The form does not submit and an Error is displayed to tell the user that the field is required.
+Actual:
+Website behaved as expected, error message was displayed and the form did not submit.
+
+
+**Footer Social Media Icons / Links**
+
+Testing was performed on the Font Awesome Social Media icons in the footer to ensure that each one opened in a new tab and that each one had a hover affec color.
+
+Each item opened a new tab when clicked as expected and correct hover color was present.
+
+**Contact form**
+Testing was performed on the contact page . It will navigate the user to Thank-you.html , 
+
+## Scenario One - Correct Inputs_
+
+Steps to test:
+## If the user inputs the user name and correct email with email format.
+Username: Ada
+Email; uju@gmail.com
+Submit;
+on clicking submit, It will navigate the user to Thank-you.html , 
+
+#  Scenario two - blank Inputs_
+
+Steps to test:
+But  if the user e.g;
+Username:
+Email; uju@gmail.com
+Submit;
+on clicking submit, there will a message telling the user that name filed must not be empty
+
+# Scenario One - in Correct email Inputs_
+
+Steps to test:
+
+But  if the user e.g;
+Username: uju
+Email; ujugmail.com
+Submit;
+on clicking submit, there will a message telling the user that email field must contain @ 
+
+# Actual:
+Website behaved as expected
+
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+### Home section
+
+![Home HTML Validator Results](assets/doc/test-images/index-Val.PNG)
+
+### Quiz section
+
+![Play HTML Validator Results](assets/doc/test-images/play-vali.PNG)
+
+### contact section
+
+![Contact us Validator Results](assets/doc/test-images/quiz-vali.PNG)
+
+
+- CSS
+  - There  was no found when passing through the official [(W3C validator]((https://validator.w3.org)
+
+![CSS Validator Results](assets/doc/test-images/cssvalidation.PNG)
+ * This is yet to be resolved, but will be address in future due time factor
+
+### Unfixed Bugs
+Responsiveness of the website worked on all devices, screen sizes and orientation with the exception of landscape orientation. it wil be taking care of in future 
+
+## Deployment
+
+### Version Control
+
+The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘FunTime-Quiz’.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
+
+```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
+
+```git push``` - This command was used to push all committed code to the remote repository on github.
+
+### Deployment to Github Pages
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the menu on left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A live link will be displayed in a green banner when published successfully. 
+
+The live link can be found here -  https://ujuadimora-dev.github.io/FunTime-Quiz/
+
+### Clone the Repository Code Locally
+
+Navigate to the GitHub Repository you want to clone to use locally:
+
+- Click on the code drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the IDE terminal
+
+The project will now of been cloned on your local machine for use.
+
+
+## Credits 
+
+
+* (https://www.w3schools.com/)
+    *  some of the code was used from this site to create form. Styles were changed to suit styling on my Website. I recommend this site for every beginners.
+
+   * https://stackoverflow.com]This site also help me in resovlving some issue in coding
+    
+* [Youtube Tutorial](https://youtu.be/2Bpiluefkh8),
+    * I learn  lot from this video especially the  Javascript.
+
+
+### Content 
+
+All contents and  media or image on this site was Fantasy( all are fantasied by me )The with the help of pexel for their free pictures and .gif(https://tenor.com/),  some of the pictures or images are from these sites: Freeipks, Undraw, MS office  pictures garllery )
+
+### Media
+
+Website Logo was created by my me [Adimora Uju]( https://ujuadimora-dev.github.io/FunTime-Quiz/) using Microfot office powerpoint-
+
